@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<!-- <link rel="shortcut icon" href="assets/ico/favicon.ico" /> -->
+	<title></title>
+</head>
+<body>
+
+	<nav class="main_menu">
+		<ul>
+			<li><a href="#" data-target="content-01">link 01</a></li>
+			<li><a href="#" data-target="content-02">link 02</a></li>
+			<li><a href="#" data-target="content-03">link 03</a></li>
+			<li><a href="#" data-target="content-04">link 04</a></li>
+			<li><a href="#" data-target="content-05">link 05</a></li>
+			<li><a href="#" data-target="content-06">link 06</a></li>
+			<li><a href="#" data-target="content-07">link 07</a></li>
+			<li><a href="#" data-target="content-08">link 08</a></li>
+			<li><a href="#" data-target="content-09">link 09</a></li>
+			<li><a href="#" data-target="content-10">link 10</a></li>
+		</ul>
+	</nav>
+
+	<section class="content-01">content 01</section>
+	<section class="content-02">content 02</section>
+	<section class="content-03">content 03</section>
+	<section class="content-04 snap">content 04</section>
+	<section class="content-05 snap">content 05</section>
+	<section class="content-06">content 06</section>
+	<section class="content-07">content 07</section>
+	<section class="content-08">content 08</section>
+	<section class="content-09">content 09</section>
+	<section class="content-10">content 10</section>
+		
+	<!-- this is where we put our custom functions -->
+	<script src="assets/js/lib/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/lib/jquery-scroll-snap.js"></script>
+	<script>
+
+		var windowHeight = $(window).innerWidth();
+
+		function scrollToClass(aid) {
+			var aTag = $('.' + aid)
+			$('html, body').animate({ scrollTop: aTag.offset().top }, 'slow')
+		}
+		
+		$(".main_menu ul li a").on('click', function() {	
+			var target = $(this).attr('data-target')
+			scrollToClass(target)
+		})
+
+		$(function(){
+			$( '.snap' ).scrollSnap()
+		})
+
+	</script>
+</body>
+</html>
