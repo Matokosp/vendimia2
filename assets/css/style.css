@@ -43,6 +43,12 @@ a img {
 	border: none;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 1.4em;
+  line-height: 1.1em;
+}
+
 
 [class^="content"] {
   text-align: center;
@@ -50,6 +56,7 @@ a img {
 }
 
 .main_menu {
+  display: none;
   position: fixed;
   width: 100%;
   padding: 10px;
@@ -66,7 +73,7 @@ a img {
   margin: 0 10px; 
 }
 
-.front {
+.evoluciona__front {
   background-image: url(../images/bkg1.jpg);
   background-size: cover;
   background-position: center center;
@@ -74,15 +81,15 @@ a img {
   height: calc(var(--vh, 1vh) * 100);
 }
 
-.front img {
+.evoluciona__front img {
   padding-top: 35vh;
 }
 
-.evoluciona-intro {
+.evoluciona__intro {
   padding: 8vh 10vw 15vh 10vw;
 }
 
-.evoluciona-intro h2 {
+.evoluciona__intro h2 {
   color: #7b6f65;
   text-align: left;
   text-transform: uppercase;
@@ -94,15 +101,18 @@ a img {
   margin: 10px 0 10px 0;
 }
 
-.evoluciona-intro p {
-  margin-top: 80px;
-  font-size: 1em;
+.evoluciona__intro p {
+  margin-top: 40px;
+  font-size: 1.1em;
   color: #706f6f;
   display: inline-block;
   width: 100%;
+  font-weight: 300;
+  text-align: left;
 }
 
 #myVideo{
+  display: none;
   position: relative;
   right: 0;
   bottom: 0;
@@ -119,6 +129,167 @@ a img {
     z-index:3;
 }
 
+.video__section--layer h2  {
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+}
 
+.separation-line-white {
+  height: 2px;
+  background-color: #fff;
+  margin: 10px 0 25vh 0;
+}
+
+.vendimia-logo-video {
+  width: 200px;
+}
+
+.video__section--layer {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 10vh;
+  padding: 0 10vw 0 10vw;
+  box-sizing: border-box;
+}
+
+.video__section--mobile .flexslider .flex-direction-nav a {
+  display: none;
+}
+
+.video__section--mobile .flexslider .flex-control-paging li a {
+  width: 8px;
+  height: 8px;
+}
+
+.origen__proyecto {
+  padding: 0 10vw;
+  display: block;
+}
+
+.origen__proyecto h2 {
+  color: #7b6f65;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.origen__proyecto--img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.origen__proyecto p {
+  width: 100%;
+  display: inline-block;
+  font-size: 1.1em;
+  text-align: left;
+  font-weight: 300;
+}
+
+.equipo {
+  padding: 50px 10vw 50px 10vw;
+  text-align: left;
+}
+
+.equipo h3 {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  color: #7b6f65;
+}
+
+.equipo div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.equipo p {
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vistas__layer {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 10vh;
+  padding: 0 10vw 0 10vw;
+  box-sizing: border-box;
+}
+
+.vistas__layer h2  {
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.info__casas {
+  padding-bottom: 60px;
+}
+
+.info__casas-item h3 {
+  font-size: 3.8em;
+  font-weight: 400;
+  color: #7b6f65;
+}
+
+.info__casas-item h4 {
+  font-size: 1.7em; 
+  color: #7b6f65;
+}
+
+.info__casas-item--separation {
+  height: 2px;
+  background-color: #7b6f65;
+  width: 30vw;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.content-05 {
+  margin-bottom: 50px;
+}
+
+.ladera__section {
+  padding: 0 10vw;
+  display: block;
+}
+
+.ladera__section h2 {
+  color: #7b6f65;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.ladera__section-item {
+  padding: 0 10vw;
+}
+
+.ladera__section--img {
+  width: 100%;
+  margin: 30px 0 40px 0;
+}
+
+.ladera__section-item h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #7b6f65;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.ladera__section-item p {
+  width: 100%;
+  display: inline-block;
+  color: #7b6f65;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  text-align: left;
+  font-weight: 300;
+}
 
 
