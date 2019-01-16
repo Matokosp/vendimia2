@@ -51,8 +51,13 @@ h2 {
 
 
 [class^="content"] {
+  margin: 10vh 0;
   text-align: center;
   align-items: center;
+}
+
+.content-01 {
+  margin-top: 0;
 }
 
 .main_menu {
@@ -86,7 +91,7 @@ h2 {
 }
 
 .evoluciona__intro {
-  padding: 8vh 10vw 15vh 10vw;
+  padding: 10vw 10vw 0 10vw;
 }
 
 .evoluciona__intro h2 {
@@ -129,8 +134,14 @@ h2 {
     z-index:3;
 }
 
-.video__section--layer h2  {
+.section__title h2 {
   color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.section__title--color h2 {
+  color: #7b6f65;
   text-align: left;
   text-transform: uppercase;
 }
@@ -150,7 +161,7 @@ h2 {
   z-index: 4;
   width: 100%;
   left: 0;
-  top: 10vh;
+  top: 5vh;
   padding: 0 10vw 0 10vw;
   box-sizing: border-box;
 }
@@ -169,12 +180,6 @@ h2 {
   display: block;
 }
 
-.origen__proyecto h2 {
-  color: #7b6f65;
-  text-align: left;
-  text-transform: uppercase;
-}
-
 .origen__proyecto--img {
   width: 100%;
   margin-top: 50px;
@@ -189,7 +194,7 @@ h2 {
 }
 
 .equipo {
-  padding: 50px 10vw 50px 10vw;
+  padding: 50px 10vw 0px 10vw;
   text-align: left;
 }
 
@@ -216,15 +221,9 @@ h2 {
   z-index: 4;
   width: 100%;
   left: 0;
-  top: 10vh;
+  top: 5vh;
   padding: 0 10vw 0 10vw;
   box-sizing: border-box;
-}
-
-.vistas__layer h2  {
-  color: #fff;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 .info__casas {
@@ -257,12 +256,6 @@ h2 {
 .ladera__section {
   padding: 0 10vw;
   display: block;
-}
-
-.ladera__section h2 {
-  color: #7b6f65;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 .ladera__section-item {
@@ -302,33 +295,38 @@ h2 {
 /*TAB GALLERY SECTION*/
 
 /* The grid: Four equal columns that floats next to each other */
-.column {
+.column_gallery_tab {
   float: left;
   width: 25%;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 /* Style the images inside the grid */
-.column img {
+.column_gallery_tab img {
   opacity: 0.8; 
-  cursor: pointer; 
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #00000026;
 }
 
-.column img:hover {
+.column_gallery_tab img:hover {
   opacity: 1;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row_gallery_tab:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
+.container_gallery_tab {
+  margin-top: 30px;
+  padding: 0 5vw;
   position: relative;
-  display: none;
+  /*display: none;*/
 }
 
 /* Expanding image text */
@@ -350,4 +348,100 @@ h2 {
   cursor: pointer;
 }
 
+.hover__info {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 3vh 15vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  background-color: rgba(129, 126, 113, 0.8);
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.hover__info-show {
+  opacity: 1;
+}
+
+.hover__info .separation-line {
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.hover__info h3 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.hover__info p {
+  line-height: 1.2em;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #fff;
+}
+
+.proyectos__section {
+  padding: 0 5vw;
+  margin: 40px 0;
+  position: relative;
+}
+
+.proyectos__section img {
+  max-width: 100%;
+}
+
+.proyecto__hover {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 3vh 15vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  background-color: rgba(129, 126, 113, 0.8);
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.proyecto__hover-show {
+  opacity: 1;
+}
+
+.proyecto__hover h3 {
+  color: #fff;
+  font-size: 1.7em;
+}
+
+.proyecto__hover .separation-line-white {
+  margin: 5px 0 10px 0;
+}
+
+.proyecto__hover p {
+  line-height: 1.2em;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #fff;
+}
+
+.contact__section {
+  padding: 0 10vw;
+}
+
+.contact__info {
+  margin-top: 40px;
+  color: #7C7065;
+}
+
+.contact__section img {
+  margin-top: 40px;
+  width: 200px;
+}
 

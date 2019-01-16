@@ -55,7 +55,7 @@
 		</section>
 		<section class="video__section--mobile">
 			<div class="flexslider">
-				<div class="video__section--layer">
+				<div class="section__title video__section--layer">
 					<h2>proyecto Vendimia</h2>
 					<div class="separation-line-white"></div>
 					<img class="vendimia-logo-video" src="assets/images/vendimia-logo.png">
@@ -78,7 +78,7 @@
         </section>
 	</section>
 	<section class="content-03">
-		<section class="origen__proyecto">
+		<section class="section__title--color origen__proyecto">
         	<h2>origen del proyecto</h2>
 			<div class="separation-line"></div>
 			<img class="origen__proyecto--img" src="assets/images/plano.jpg">
@@ -100,7 +100,7 @@
 	</section>
 	<section class="content-04 snap">
 		<div class="flexslider vistas">
-			<div class="vistas__layer">
+			<div class="section__title vistas__layer">
 				<h2>vistas privilegiadas desde lo alto de Santiago</h2>
 			<div class="separation-line-white"></div>
 			</div>
@@ -149,7 +149,7 @@
 		</div>
 	</section>
 	<section class="content-05">
-		<section class="ladera__section">
+		<section class="section__title--color ladera__section">
         	<h2>te invitamos a vivir la ladera</h2>
 			<div class="separation-line"></div>
 		</section>
@@ -178,7 +178,7 @@
 	</section>
 	<section class="content-06 snap">
 		<div class="flexslider">
-			<div class="vistas__layer">
+			<div class="section__title vistas__layer">
 				<h2>con los materiales más
 					nobles al descubierto</h2>
 			<div class="separation-line-white"></div>
@@ -200,41 +200,144 @@
         </div>	
 	</section>
 	<section class="content-07">
-		<section class="ladera__section">
+		<section class="section__title--color ladera__section">
         	<h2>dos tipologías de casas</h2>
 			<div class="separation-line"></div>
 		</section>
-		<!-- The grid: four columns -->
-		<div class="row">
-			<div class="column">
-				<img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
-			</div>
-			<div class="column">
-				<img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
-			</div>
-			<div class="column">
-				<img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
-			</div>
-			<div class="column">
-				<img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
-			</div>
-		</div>
-
 		<!-- The expanding image container -->
-		<div class="container">
+		<div class="container_gallery_tab">
 			<!-- Close the image -->
-			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			<!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
 
 			<!-- Expanded image -->
-			<img id="expandedImg" style="width:100%">
+			<img src="assets/images/casa_maite.jpg" id="expandedImg" style="width:100%">
+			<div class="hover__info" id="hover__info">
+				<h3>Casa Maitén</h3>
+				<div class="separation-line"></div>
+				<p>3 CASAS Q <br>
+				Entrada piso Cubierta</p>
+				<br>
+				<p><b>Medidas:</b> 7 casas M, Entrada
+					piso zócalo, 395 m2
+					contruidos, 773 m2 terreno
+					exclusivo, 77 m2 terrazas
+					cubiertas, 480 m2 de jardines,
+					terrazas, quincho y piscina,</p>
+					<br>
+				<p><b>Espacios:</b>4 estacionamientos, 3
+					dormitorios en suite, 4 baños. Estar
+					familiar, Escritorio, Galería estudio,
+					Dormitorio y baño de servicios, sala
+					de máquinas de 16 m2 y patio de
+					servicio de 17 m2</p>
+			</div>
+		</div>
+		<!-- The grid: four columns -->
+		<div class="row_gallery_tab">
+			<div class="column_gallery_tab">
+				<img src="assets/images/casa_maite.jpg" alt="Maitén" onclick="expandFirst(this);">
+			</div>
+			<div class="column_gallery_tab">
+				<img src="assets/images/casa_maite1.jpg" alt="Snow" onclick="expandFirst(this);">
+			</div>
+			<div class="column_gallery_tab">
+				<img src="assets/images/casa_maite2.jpg" alt="Mountains" onclick="expandFirst(this);">
+			</div>
+			<div class="column_gallery_tab">
+				<img src="assets/images/casa_maite3.jpg" alt="Lights" onclick="expandFirst(this);">
+			</div>
+		</div>
 
-			<!-- Image text -->
-			<div id="imgtext"></div>
+
+		<!-- The expanding image container -->
+		<div class="container_gallery_tab">
+			<!-- Close the image -->
+			<!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+
+			<!-- Expanded image -->
+			<img src="assets/images/casa_quillay.jpg" id="expandedImgSecond" style="width:100%">
+			<div class="hover__info" id="hover__info-2">
+				<h3>Casa Quillay</h3>
+				<div class="separation-line"></div>
+				<p>3 CASAS Q <br>
+				Entrada piso Cubierta</p>
+				<br>
+				<p><b>Medidas:</b> 7 casas M, Entrada
+					piso zócalo, 395 m2
+					contruidos, 773 m2 terreno
+					exclusivo, 77 m2 terrazas
+					cubiertas, 480 m2 de jardines,
+					terrazas, quincho y piscina,</p>
+					<br>
+				<p><b>Espacios:</b>4 estacionamientos, 3
+					dormitorios en suite, 4 baños. Estar
+					familiar, Escritorio, Galería estudio,
+					Dormitorio y baño de servicios, sala
+					de máquinas de 16 m2 y patio de
+					servicio de 17 m2</p>
+			</div>
+		</div>
+		<!-- The grid: four columns -->
+		<div class="row_gallery_tab">
+			<div class="column_gallery_tab">
+				<img src="assets/images/casa_quillay.jpg" alt="Nature" onclick="expandSecond(this);">
+			</div>
+			<div class="column_gallery_tab">
+				<img src="assets/images/casa_quillay1.jpg" alt="Snow" onclick="expandSecond(this);">
+			</div>
+			<div class="column_gallery_tab">
+				<img src="assets/images/casa_quillay2.jpg" alt="Mountains" onclick="expandSecond(this);">
+			</div>
+			<div class="column_gallery_tab">
+				<img src="assets/images/casa_quillay3.jpg" alt="Lights" onclick="expandSecond(this);">
+			</div>
 		</div>
 	</section>
-	<section class="content-08">content 08</section>
-	<section class="content-09">content 09</section>
-	<section class="content-10">content 10</section>
+	<section class="content-08">
+		<section class="section__title--color ladera__section">
+        	<h2>otros proyectos evoluciona</h2>
+			<div class="separation-line"></div>
+		</section>
+		<div class="proyectos__section">
+			<img src="assets/images/lo-vial.jpg">
+			<div class="proyecto__hover" id="proyectos__hover">
+				<h3>Lo Vial</h3>
+				<div class="separation-line-white"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<div class="proyectos__section">
+			<img src="assets/images/vista-lo-ovalle.jpg">
+			<div class="proyecto__hover" id="proyectos__hover-2">
+				<h3>Vista Lo Ovalle</h3>
+				<div class="separation-line-white"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</section>
+	<section class="content-09">
+		<div class="contact__section">
+			<div class="section__title--color">
+				<h2>contáctanos</h2>
+				<div class="separation-line"></div>
+			</div>
+			<div class="contact__info">
+				<p>+562 2201 0438</p>
+				<p>contacto@ievoluciona.cl</p>
+			</div>
+			<img src="assets/images/evoluciona-icon-color.png">
+		</div>
+	</section>
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -242,6 +345,7 @@
 	<!-- this is where we put our custom functions -->
 	<!-- <script src="assets/js/lib/jquery-3.1.0.min.js"></script> -->
 	<script src="assets/js/lib/jquery-scroll-snap.js"></script>
+	<script src="assets/js/lib/myscript.js"></script>
 
 	<script type="text/javascript">
   		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -288,19 +392,46 @@
 
 	</script>
 
+	<!-- GALLERY TAB -->
 	<script type="text/javascript">
-		function myFunction(imgs) {
+		function expandFirst(imgs) {
 		  // Get the expanded image
 		  var expandImg = document.getElementById("expandedImg");
-		  // Get the image text
-		  var imgText = document.getElementById("imgtext");
+
 		  // Use the same src in the expanded image as the image being clicked on from the grid
 		  expandImg.src = imgs.src;
-		  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-		  imgText.innerHTML = imgs.alt;
 		  // Show the container element (hidden with CSS)
 		  expandImg.parentElement.style.display = "block";
 		}	
+	</script>
+
+	<!-- GALLERY TAB -->
+	<script type="text/javascript">
+		function expandSecond(imgsSecond) {
+		  // Get the expanded image
+		  var expandImgSecond = document.getElementById("expandedImgSecond");
+		  // Get the image text
+		  var imgText = document.getElementById("imgtext");
+		  // Use the same src in the expanded image as the image being clicked on from the grid
+		  expandImgSecond.src = imgsSecond.src;
+		  // Show the container element (hidden with CSS)
+		  expandImgSecond.parentElement.style.display = "block";
+		}	
+	</script>
+
+	<script type="text/javascript">
+		$('#hover__info').on('click', function(){		
+			$(this).toggleClass('hover__info-show');
+		})
+		$('#hover__info-2').on('click', function(){		
+			$(this).toggleClass('hover__info-show');
+		})
+		$('#proyectos__hover').on('click', function(e){
+			$(this).toggleClass('proyecto__hover-show');
+		})
+		$('#proyectos__hover-2').on('click', function(e){
+			$(this).toggleClass('proyecto__hover-show');
+		})
 	</script>
 </body>
 </html>
