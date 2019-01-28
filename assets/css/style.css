@@ -78,7 +78,7 @@ h2 {
   margin: 0 10px; 
 }
 
-.evoluciona__front {
+/*.evoluciona__front {
   background-image: url(../images/bkg1.jpg);
   background-size: cover;
   background-position: center center;
@@ -98,7 +98,7 @@ h2 {
   color: #7b6f65;
   text-align: left;
   text-transform: uppercase;
-}
+}*/
 
 .separation-line {
   height: 2px;
@@ -106,7 +106,7 @@ h2 {
   margin: 10px 0 10px 0;
 }
 
-.evoluciona__intro p {
+/*.evoluciona__intro p {
   margin-top: 40px;
   font-size: 1.1em;
   color: #706f6f;
@@ -114,7 +114,7 @@ h2 {
   width: 100%;
   font-weight: 300;
   text-align: left;
-}
+}*/
 
 #myVideo{
   display: none;
@@ -162,7 +162,7 @@ h2 {
   width: 100%;
   left: 0;
   top: 5vh;
-  padding: 0 10vw 0 10vw;
+  padding: 30vh 10vw 0 10vw;
   box-sizing: border-box;
 }
 
@@ -174,6 +174,9 @@ h2 {
   width: 8px;
   height: 8px;
 }
+
+
+/*ORIGEN PROYECTO SECTION*/
 
 .origen__proyecto {
   padding: 0 10vw;
@@ -192,6 +195,10 @@ h2 {
   text-align: left;
   font-weight: 300;
 }
+
+
+
+/*EQUIPO SECTION*/
 
 .equipo {
   padding: 50px 10vw 0px 10vw;
