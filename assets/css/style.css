@@ -200,7 +200,16 @@ h2 {
 
 /*EQUIPO SECTION*/
 
+.content-03 {
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 10vh 0 0 0;
+}
+
 .equipo {
+
+}
+
+/*.equipo {
   padding: 50px 10vw 0px 10vw;
   text-align: left;
 }
@@ -221,6 +230,12 @@ h2 {
   margin-top: 10px;
   display: inline-block;
   vertical-align: middle;
+}*/
+
+
+
+.content-04 {
+  margin: 0 0 10vh 0;
 }
 
 .vistas__layer {
@@ -256,7 +271,10 @@ h2 {
   margin: 20px 0;
 }
 
+/*LADERA SECTION*/
+
 .content-05 {
+
   margin-bottom: 50px;
 }
 
@@ -291,8 +309,6 @@ h2 {
   text-align: left;
   font-weight: 300;
 }
-
-
 
 
 
