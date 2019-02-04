@@ -218,7 +218,7 @@ h2 {
   width: 100%;
   left: 0;
   top: 5vh;
-  padding: 30vh 10vw 0 10vw;
+  padding: 35vh 10vw 0 10vw;
   box-sizing: border-box;
 }
 
@@ -538,13 +538,14 @@ h2 {
 }
 
 .hover__info p {
+  margin-top: 5px;
   line-height: 1.2em;
   font-size: 0.8em;
   font-weight: 300;
   color: #fff;
 }
 
-.proyectos__section {
+/*.proyectos__section {
   padding: 0 5vw;
   margin: 40px 0;
   position: relative;
@@ -588,15 +589,21 @@ h2 {
   font-size: 0.8em;
   font-weight: 300;
   color: #fff;
+}*/
+
+.content-08 {
+  margin-bottom: 0;
 }
 
 .contact__section {
+  background-color: #000;
   padding: 0 10vw;
 }
 
 .contact__info {
   margin-top: 40px;
-  color: #7C7065;
+  color: #fff;
+  padding-bottom: 40px;
 }
 
 .contact__section img {

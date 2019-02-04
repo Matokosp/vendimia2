@@ -82,6 +82,29 @@
 	width: 50%;
 	box-sizing: border-box;
 	padding: 0 5vw;
+	margin-top: 15px;
+}
+
+.container_gallery_tab {
+  padding: 0;
+}
+
+.hover__info {
+  padding: 5%;
+  width: 100%;
+}
+
+.hover__info-show {
+  opacity: 1;
+}
+
+.hover__info h3 {
+  font-size: 1.4em;
+}
+
+.hover__info p {
+	margin-top: 10px;
+  font-size: 1.1em;
 }
 
 }
