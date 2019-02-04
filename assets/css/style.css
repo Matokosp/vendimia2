@@ -43,10 +43,19 @@ a img {
 	border: none;
 }
 
+@font-face {
+  font-family: 'Biloxi Script';
+  src: url("../fonts/biloxi.ttf");
+}
+
 h2 {
   font-weight: 600;
   font-size: 1.2em;
   line-height: 1.1em;
+}
+
+.clearfix {
+  clear: both;
 }
 
 .max-width {
@@ -113,15 +122,11 @@ h2 {
   text-align: left;
 }*/
 
-@font-face {
-  font-family: 'Biloxi Script';
-  src: url("../fonts/biloxi.ttf");
-}
-
 .section__title h2 {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .separation-line {
@@ -134,6 +139,7 @@ h2 {
 .section__title--color h2 {
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .title__word {
@@ -354,7 +360,6 @@ h2 {
 /*LADERA SECTION*/
 
 .content-05 {
-
   margin-bottom: 50px;
 }
 
