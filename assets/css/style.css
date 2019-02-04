@@ -19,7 +19,7 @@ a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, f
 
 body { 
   line-height: 1.5;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 caption, th, td { 
@@ -45,10 +45,13 @@ a img {
 
 h2 {
   font-weight: 600;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.1em;
 }
 
+.max-width {
+  max-width: 2000px;
+}
 
 [class^="content"] {
   margin: 10vh 0;
@@ -100,12 +103,6 @@ h2 {
   text-transform: uppercase;
 }*/
 
-.separation-line {
-  height: 2px;
-  background-color: #7b6f65;
-  margin: 10px 0 10px 0;
-}
-
 /*.evoluciona__intro p {
   margin-top: 40px;
   font-size: 1.1em;
@@ -115,6 +112,70 @@ h2 {
   font-weight: 300;
   text-align: left;
 }*/
+
+@font-face {
+  font-family: 'Biloxi Script';
+  src: url("../fonts/biloxi.ttf");
+}
+
+.section__title h2 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.separation-line {
+  height: 2px;
+  background-color: #7b6f65;
+  width: 20%;
+  margin: 10px auto 0 auto;
+}
+
+.section__title--color h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title__word {
+  font-family: 'Biloxi Script';
+  font-size: 3.4em;
+  line-height: 1em;
+  color: #A38C5F;
+  /*width: 200px;
+  margin-top: 10px;*/
+}
+
+.title__word--white {
+  font-family: 'Biloxi Script';
+  font-size: 3.4em;
+  line-height: 0.8em;
+  color: #fff;
+  margin: 10px 0;
+  /*width: 200px;
+  margin-top: 10px;*/
+}
+
+/*.title__word--long {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.title__word--short {
+  width: 270px;
+  margin-top: 10px;
+}
+
+.title__word--xtrashort {
+  width: 180px;
+  margin-top: 10px;
+}*/
+
+.separation-line-white {
+  height: 2px;
+  background-color: #fff;
+  width: 20%;
+  margin: 10px auto 0 auto;
+}
 
 #myVideo{
   display: none;
@@ -134,26 +195,15 @@ h2 {
     z-index:3;
 }
 
-.section__title h2 {
-  color: #fff;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.section__title--color h2 {
-  color: #7b6f65;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.separation-line-white {
-  height: 2px;
-  background-color: #fff;
-  margin: 10px 0 25vh 0;
-}
-
 .vendimia-logo-video {
   width: 200px;
+}
+
+.video__section--mobile {
+  height: calc(var(--vh, 1vh) * 100);
+  background-image: url(../images/front-res.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .video__section--layer {
@@ -234,6 +284,8 @@ h2 {
 
 
 
+/*VISTAS SECTION*/
+
 .content-04 {
   margin: 0 0 10vh 0;
 }
@@ -247,6 +299,34 @@ h2 {
   padding: 0 10vw 0 10vw;
   box-sizing: border-box;
 }
+
+.vista_slide {
+  height: calc(var(--vh, 1vh) * 100);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.vista-1 {
+  background-image: url(../images/vista_1.jpg);
+}
+
+.vista-2 {
+  background-image: url(../images/vista_2.jpg);
+}
+
+.vista-3 {
+  background-image: url(../images/vista_3.jpg);
+}
+
+.vista-4 {
+  background-image: url(../images/vista_4.jpg);
+}
+
+.vista-5 {
+  background-image: url(../images/vista_5.jpg);
+}
+
 
 .info__casas {
   padding-bottom: 60px;
@@ -309,6 +389,57 @@ h2 {
   text-align: left;
   font-weight: 300;
 }
+
+
+/*INTERIOR VIEW SLIDES*/
+
+.interior_slide {
+  height: calc(var(--vh, 1vh) * 100);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.interior-1 {
+  background-image: url(../assets/interior_1.jpg);
+}
+
+.interior-2 {
+  background-image: url(../assets/interior_2.jpg);
+}
+
+.interior-3 {
+  background-image: url(../assets/interior_3.jpg);
+}
+
+.interior-4 {
+  background-image: url(../assets/interior_4.jpg);
+}
+
+.interior-5 {
+  background-image: url(../assets/interior_5.jpg);
+}
+
+.interior-6 {
+  background-image: url(../assets/interior_6.jpg);
+}
+
+.interior-7 {
+  background-image: url(../assets/interior_7.jpg);
+}
+
+.interior-8 {
+  background-image: url(../assets/interior_8.jpg);
+}
+
+.interior-9 {
+  background-image: url(../assets/interior_9.jpg);
+}
+
+.interior-10 {
+  background-image: url(../assets/interior_10.jpg);
+}
+
 
 
 

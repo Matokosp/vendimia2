@@ -10,343 +10,386 @@
 	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0" />
 	<link rel="shortcut icon" href="assets/ico/favicon.ico" />
 	<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- FLEXSLIDER -->
-    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen"/>
     <!-- MY STYLE -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 	
 </head>
 <body>
+	<div class="max-width">
 
-	<nav class="main_menu">
-		<ul>
-			<li><a href="#" data-target="content-01">link 01</a></li>
-			<li><a href="#" data-target="content-02">link 02</a></li>
-			<li><a href="#" data-target="content-03">link 03</a></li>
-			<li><a href="#" data-target="content-04">link 04</a></li>
-			<li><a href="#" data-target="content-05">link 05</a></li>
-			<li><a href="#" data-target="content-06">link 06</a></li>
-			<li><a href="#" data-target="content-07">link 07</a></li>
-			<li><a href="#" data-target="content-08">link 08</a></li>
-			<li><a href="#" data-target="content-09">link 09</a></li>
-			<li><a href="#" data-target="content-10">link 10</a></li>
-		</ul>
-	</nav>
-
-<!-- 	<section class="content-01">
-		<section class="evoluciona__front">
-    		<img src="assets/images/evoluciona-logo.png">
-    	</section>
-    	<section class="evoluciona__intro">
-    		<h2>la inmobiliaria</h2>
-    		<div class="separation-line"></div>
-    		<p>En Evoluciona desarrollamos proyectos inmobiliarios
-				alineados con las necesidades de la vida actual.
-				Nuestro objetivo es brindar una experiencia de vida con
-				altos estándares de calidad y&nbsp;funcionalidad.</p>		
-    	</section>
-	</section> -->
-	<section class="content-01">
-		<section class="video__section">
-			<video id="myVideo" loop muted data-autoplay>
-				<source src="assets/images/flowers.mp4" type="video/mp4">
-			</video>
-		</section>
-		<section class="video__section--mobile">
-			<div class="flexslider">
-				<div class="section__title video__section--layer">
-					<!-- <h2>proyecto Vendimia</h2>
-					<div class="separation-line-white"></div> -->
-					<img class="vendimia-logo-video" src="assets/images/vendimia-logo.png">
-				</div>
-		          <ul class="slides">
-		            <li>
-		  	    	    <div style="background-color: salmon; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-		  	    	</li>
-	  	    		<li>
-		  	    	    <div style="background-color: lightblue; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-	  	    		</li>
-	  	    		<li>
-		  	    	    <div style="background-color: peru; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-	  	    		</li>
-	  	    		<li>
-		  	    	    <div style="background-color: green; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-	  	    		</li>
-		          </ul>
-	        </div>
-        </section>
-	</section>
-	<section class="content-02">
-		<section class="section__title--color origen__proyecto">
-        	<h2>origen del proyecto</h2>
-			<div class="separation-line"></div>
-			<img class="origen__proyecto--img" src="assets/images/plano.jpg">
-			<p>El proyecto Vendimia propone el desafío de insertar en la condición natural
-				escenográfica de la ladera del cerro Manquehue una plataforma de contemplación
-				del valle y la ciudad de Santiago desde un conjunto de departamentos tipo
-				penthouse, síntesis de la representación de los actos de una casa en la libertad y
-				seguridad del departamento, con grandes espacios y jardines en terrazas.</p>
-        </section>
-<!--         <section class="equipo">
-        	<h3>Construido por un equipo
-			interdisciplinario de excelencia</h3>
-			<div></div>
-			<p>Sabbagh, Arquitectos <br>
-			Enrique Concha, Diseño de interior <br>
-			Elizabeth Huyghe, Paisajista <br>
-			Christies Real Estate</p>
-        </section> -->
-	</section>
-	<section class="content-03 snap">
-		<div class="flexslider equipo">
-			<ul class="slides">
-				<li style="background-color: lightblue; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></li>
-				<li></li>
-				<li></li>
+		<nav class="main_menu">
+			<ul>
+				<li><a href="#" data-target="content-01">link 01</a></li>
+				<li><a href="#" data-target="content-02">link 02</a></li>
+				<li><a href="#" data-target="content-03">link 03</a></li>
+				<li><a href="#" data-target="content-04">link 04</a></li>
+				<li><a href="#" data-target="content-05">link 05</a></li>
+				<li><a href="#" data-target="content-06">link 06</a></li>
+				<li><a href="#" data-target="content-07">link 07</a></li>
+				<li><a href="#" data-target="content-08">link 08</a></li>
+				<li><a href="#" data-target="content-09">link 09</a></li>
+				<li><a href="#" data-target="content-10">link 10</a></li>
 			</ul>
-		</div>
-	</section>
-	<section class="content-04 snap">
-		<div class="flexslider vistas">
-			<div class="section__title vistas__layer">
-				<h2>vistas privilegiadas desde lo alto de Santiago</h2>
-			<div class="separation-line-white"></div>
-			</div>
-	          <ul class="slides">
-	            <li>
-	  	    	    <div style="background-color: salmon; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-	  	    	</li>
-  	    		<li>
-	  	    	    <div style="background-color: lightblue; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-  	    		</li>
-  	    		<li>
-	  	    	    <div style="background-color: peru; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-  	    		</li>
-  	    		<li>
-	  	    	    <div style="background-color: green; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-  	    		</li>
-	          </ul>
-        </div>			
-		<div class="info__casas">
-			<div class="info__casas-item">
-				<h3>10</h3>
-				<h4>Exclusivas <br> Unidades</h4>
-				<div class="info__casas-item--separation"></div>
+		</nav>
 
-			</div>
-			<div class="info__casas-item">
-				<h3>2</h3>
-				<h4>Tipologías <br> de casas</h4>
-				<div class="info__casas-item--separation"></div>
-				
-			</div>
-			<div class="info__casas-item">
-				<h3>3</h3>
-				<h4>Amplios <br> dormitorios</h4>
-				<div class="info__casas-item--separation"></div>
-			</div>
-			<div class="info__casas-item">
-				<h3>360</h3>
-				<h4>Mts. de altura <br> en recibos</h4>
-				<div class="info__casas-item--separation"></div>
-			</div>
-			<div class="info__casas-item">
-				<h3>400</h3>
-				<h4>Mts2 de <br> superficie útil</h4>
-			</div>
-		</div>
-	</section>
-	<section class="content-05">
-		<section class="section__title--color ladera__section">
-        	<h2>te invitamos a vivir la ladera</h2>
-			<div class="separation-line"></div>
+	<!-- 	<section class="content-01">
+			<section class="evoluciona__front">
+	    		<img src="assets/images/evoluciona-logo.png">
+	    	</section>
+	    	<section class="evoluciona__intro">
+	    		<h2>la inmobiliaria</h2>
+	    		<div class="separation-line"></div>
+	    		<p>En Evoluciona desarrollamos proyectos inmobiliarios
+					alineados con las necesidades de la vida actual.
+					Nuestro objetivo es brindar una experiencia de vida con
+					altos estándares de calidad y&nbsp;funcionalidad.</p>		
+	    	</section>
+		</section> -->
+		<section class="content-01">
+			<section class="video__section">
+					<div class="section__title video__section--layer">
+						<img class="vendimia-logo-video" src="assets/images/vendimia-logo.png">
+					</div>
+				<!-- <video id="myVideo" loop muted data-autoplay> -->
+					<video autoplay muted loop src="assets/images/flowers.mp4" id="myVideo" "></video>
+					<!-- <source src="assets/images/flowers.mp4" type="video/mp4"> -->
+				<!-- </video> -->
+			</section>
+			<section class="video__section--mobile">
+			<!-- 	<div class="flexslider">
+					<div class="section__title video__section--layer">
+						<img class="vendimia-logo-video" src="assets/images/vendimia-logo.png">
+					</div>
+			          <ul class="slides">
+			            <li>
+			  	    	    <div style="background-color: salmon; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
+			  	    	</li>
+		  	    		<li>
+			  	    	    <div style="background-color: lightblue; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
+		  	    		</li>
+		  	    		<li>
+			  	    	    <div style="background-color: peru; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
+		  	    		</li>
+		  	    		<li>
+			  	    	    <div style="background-color: green; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
+		  	    		</li>
+			          </ul>
+		        </div> -->
+	        </section>
 		</section>
-		<section class="ladera__section-item">
-			<img class="ladera__section--img" src="assets/images/map.jpg">
-			<h3>Naturaleza y conexión</h3>
-			<p>Su ubicación en la zona alta de Lo
-				Curro otorga el privilegio de vivir
-				rodeado de naturaleza con vistas
-				que deleitan, y a su vez estar
-				conectado con la ciudad de forma
-				expedita. (Camino el Minero, Santa
-				María, Vitacura).</p>
-        </section>
-        <section class="ladera__section-item">
-        	<img class="ladera__section--img" src="assets/images/ladera.jpg">
-			<h3>El cerro como elemento arquitectónico</h3>
-			<p>En el plano vertical, las casas se
-				ordenan a ambos lados de la calle
-				ascendiendo hacia el cerro o
-				bajando hacia el valle. Se gradua
-				la relación con la calle y los
-				recintos interiores, desde que se
-				entra hasta lo más privado.</p>
-        </section>
-	</section>
-	<section class="content-06 snap">
-		<div class="flexslider">
-			<div class="section__title vistas__layer">
-				<h2>con los materiales más
-					nobles al descubierto</h2>
-			<div class="separation-line-white"></div>
-			</div>
-	          <ul class="slides">
-	            <li>
-	  	    	    <div style="background-color: salmon; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-	  	    	</li>
-  	    		<li>
-	  	    	    <div style="background-color: lightblue; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-  	    		</li>
-  	    		<li>
-	  	    	    <div style="background-color: peru; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-  	    		</li>
-  	    		<li>
-	  	    	    <div style="background-color: green; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
-  	    		</li>
-	          </ul>
-        </div>	
-	</section>
-	<section class="content-07">
-		<section class="section__title--color ladera__section">
-        	<h2>dos tipologías de casas</h2>
-			<div class="separation-line"></div>
-		</section>
-		<!-- The expanding image container -->
-		<div class="container_gallery_tab">
-			<!-- Close the image -->
-			<!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
-
-			<!-- Expanded image -->
-			<img src="assets/images/casa_maite.jpg" id="expandedImg" style="width:100%">
-			<div class="hover__info" id="hover__info">
-				<h3>Casa Maitén</h3>
+		<section class="content-02">
+			<section class="section__title--color origen__proyecto">
+	        	<h2>origen del</h2>
+	        	<h3 class="title__word">proyecto</h3>
+	        	<!-- <img class="title__word" src="assets/images/proyecto.png"> -->
 				<div class="separation-line"></div>
-				<p>3 CASAS Q <br>
-				Entrada piso Cubierta</p>
-				<br>
-				<p><b>Medidas:</b> 7 casas M, Entrada
-					piso zócalo, 395 m2
-					contruidos, 773 m2 terreno
-					exclusivo, 77 m2 terrazas
-					cubiertas, 480 m2 de jardines,
-					terrazas, quincho y piscina,</p>
+				<img class="origen__proyecto--img" src="assets/images/plano.jpg">
+				<p>El proyecto Vendimia propone el desafío de insertar en la condición natural
+					escenográfica de la ladera del cerro Manquehue una plataforma de contemplación
+					del valle y la ciudad de Santiago desde un conjunto de departamentos tipo
+					penthouse, síntesis de la representación de los actos de una casa en la libertad y
+					seguridad del departamento, con grandes espacios y jardines en terrazas.</p>
+	        </section>
+	<!--         <section class="equipo">
+	        	<h3>Construido por un equipo
+				interdisciplinario de excelencia</h3>
+				<div></div>
+				<p>Sabbagh, Arquitectos <br>
+				Enrique Concha, Diseño de interior <br>
+				Elizabeth Huyghe, Paisajista <br>
+				Christies Real Estate</p>
+	        </section> -->
+		</section>
+		<section class="content-03 snap">
+			<div class="flexslider equipo">
+				<section class="section__title--color vistas__layer">
+		        	<h2>construido por un <br>
+		        		equipo interdiciplinario de</h2>
+		        	<h3 class="title__word">excelencia</h3>
+		        	<!-- <img class="title__word" src="assets/images/excelencia.png"> -->
+					<div class="separation-line"></div>
+				</section>
+				<ul class="slides">
+					<li style="background-color: lightblue; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+		<section class="content-04 snap">
+			<div class="flexslider vistas">
+				<section class="section__title vistas__layer">
+					<h2>vistas privilegiadas desde</h2>
+					<h3 class="title__word--white">lo alto de Santiago</h3>
+					<!-- <img class="title__word--long" src="assets/images/alto-santiago.png"> -->
+					<div class="separation-line-white"></div>
+				</section>
+				<ul class="slides">
+					<li>
+					    <div class="vista_slide vista-1"></div>
+					</li>
+					<li>
+					    <div class="vista_slide vista-2"></div>
+					</li>
+					<li>
+					    <div class="vista_slide vista-3"></div>
+					</li>
+					<li>
+					    <div class="vista_slide vista-4"></div>
+					</li>
+					<li>
+					    <div class="vista_slide vista-5"></div>
+					</li>
+				</ul>
+	        </div>			
+			<div class="info__casas">
+				<div class="info__casas-item">
+					<h3>10</h3>
+					<h4>Exclusivas <br> Unidades</h4>
+					<div class="info__casas-item--separation"></div>
+
+				</div>
+				<div class="info__casas-item">
+					<h3>2</h3>
+					<h4>Tipologías <br> de casas</h4>
+					<div class="info__casas-item--separation"></div>
+					
+				</div>
+				<div class="info__casas-item">
+					<h3>3</h3>
+					<h4>Amplios <br> dormitorios</h4>
+					<div class="info__casas-item--separation"></div>
+				</div>
+				<div class="info__casas-item">
+					<h3>360</h3>
+					<h4>Mts. de altura <br> en recibos</h4>
+					<div class="info__casas-item--separation"></div>
+				</div>
+				<div class="info__casas-item">
+					<h3>400</h3>
+					<h4>Mts2 de <br> superficie útil</h4>
+				</div>
+			</div>
+		</section>
+		<section class="content-05">
+			<section class="section__title--color ladera__section">
+	        	<h2>te invitamos a</h2>
+	        	<h3 class="title__word">vivir la ladera</h3>
+	        	<!-- <img src="assets/images/vivir-ladera.png" class="title__word--long"> -->
+				<div class="separation-line"></div>
+			</section>
+			<section class="ladera__section-item">
+				<img class="ladera__section--img" src="assets/images/map.jpg">
+				<h3>Naturaleza y conexión</h3>
+				<p>Su ubicación en la zona alta de Lo
+					Curro otorga el privilegio de vivir
+					rodeado de naturaleza con vistas
+					que deleitan, y a su vez estar
+					conectado con la ciudad de forma
+					expedita. (Camino el Minero, Santa
+					María, Vitacura).</p>
+	        </section>
+	        <section class="ladera__section-item">
+	        	<img class="ladera__section--img" src="assets/images/ladera.jpg">
+				<h3>El cerro como elemento arquitectónico</h3>
+				<p>En el plano vertical, las casas se
+					ordenan a ambos lados de la calle
+					ascendiendo hacia el cerro o
+					bajando hacia el valle. Se gradua
+					la relación con la calle y los
+					recintos interiores, desde que se
+					entra hasta lo más privado.</p>
+	        </section>
+		</section>
+		<section class="content-06 snap">
+			<div class="flexslider">
+				<div class="section__title vistas__layer">
+					<h2>con los materiales <br>
+						más nobles</h2>
+					<h3 class="title__word--white">al descubierto</h3>
+					<!-- <img src="assets/images/descubierto.png" class="title__word--short"> -->
+					<div class="separation-line-white"></div>
+				</div>
+				<ul class="slides">
+					<li>
+						<div class="interior_slide interior-1"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-2"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-3"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-4"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-5"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-6"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-7"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-8"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-9"></div>
+					</li>
+					<li>
+						<div class="interior_slide interior-10"></div>
+					</li>
+				</ul>
+	        </div>	
+		</section>
+		<section class="content-07">
+			<section class="section__title--color ladera__section">
+	        	<h2>dos tipologías</h2>
+	        	<h3 class="title__word">de casas</h3>
+	        	<!-- <img src="assets/images/casas.png" class="title__word--xtrashort"> -->
+				<div class="separation-line"></div>
+			</section>
+			<!-- The expanding image container -->
+			<div class="container_gallery_tab">
+				<!-- Close the image -->
+				<!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+
+				<!-- Expanded image -->
+				<img src="assets/images/casa_maite.jpg" id="expandedImg" style="width:100%">
+				<div class="hover__info" id="hover__info">
+					<h3>Casa Maitén</h3>
+					<div class="separation-line"></div>
+					<p>3 CASAS Q <br>
+					Entrada piso Cubierta</p>
 					<br>
-				<p><b>Espacios:</b>4 estacionamientos, 3
-					dormitorios en suite, 4 baños. Estar
-					familiar, Escritorio, Galería estudio,
-					Dormitorio y baño de servicios, sala
-					de máquinas de 16 m2 y patio de
-					servicio de 17 m2</p>
+					<p><b>Medidas:</b> 7 casas M, Entrada
+						piso zócalo, 395 m2
+						contruidos, 773 m2 terreno
+						exclusivo, 77 m2 terrazas
+						cubiertas, 480 m2 de jardines,
+						terrazas, quincho y piscina,</p>
+						<br>
+					<p><b>Espacios:</b>4 estacionamientos, 3
+						dormitorios en suite, 4 baños. Estar
+						familiar, Escritorio, Galería estudio,
+						Dormitorio y baño de servicios, sala
+						de máquinas de 16 m2 y patio de
+						servicio de 17 m2</p>
+				</div>
 			</div>
-		</div>
-		<!-- The grid: four columns -->
-		<div class="row_gallery_tab">
-			<div class="column_gallery_tab">
-				<img src="assets/images/casa_maite.jpg" alt="Maitén" onclick="expandFirst(this);">
+			<!-- The grid: four columns -->
+			<div class="row_gallery_tab">
+				<div class="column_gallery_tab">
+					<img src="assets/images/casa_maite.jpg" alt="Maitén" onclick="expandFirst(this);">
+				</div>
+				<div class="column_gallery_tab">
+					<img src="assets/images/casa_maite1.jpg" alt="Snow" onclick="expandFirst(this);">
+				</div>
+				<div class="column_gallery_tab">
+					<img src="assets/images/casa_maite2.jpg" alt="Mountains" onclick="expandFirst(this);">
+				</div>
+				<div class="column_gallery_tab">
+					<img src="assets/images/casa_maite3.jpg" alt="Lights" onclick="expandFirst(this);">
+				</div>
 			</div>
-			<div class="column_gallery_tab">
-				<img src="assets/images/casa_maite1.jpg" alt="Snow" onclick="expandFirst(this);">
-			</div>
-			<div class="column_gallery_tab">
-				<img src="assets/images/casa_maite2.jpg" alt="Mountains" onclick="expandFirst(this);">
-			</div>
-			<div class="column_gallery_tab">
-				<img src="assets/images/casa_maite3.jpg" alt="Lights" onclick="expandFirst(this);">
-			</div>
-		</div>
 
 
-		<!-- The expanding image container -->
-		<div class="container_gallery_tab">
-			<!-- Close the image -->
-			<!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+			<!-- The expanding image container -->
+			<div class="container_gallery_tab">
+				<!-- Close the image -->
+				<!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
 
-			<!-- Expanded image -->
-			<img src="assets/images/casa_quillay.jpg" id="expandedImgSecond" style="width:100%">
-			<div class="hover__info" id="hover__info-2">
-				<h3>Casa Quillay</h3>
-				<div class="separation-line"></div>
-				<p>3 CASAS Q <br>
-				Entrada piso Cubierta</p>
-				<br>
-				<p><b>Medidas:</b> 7 casas M, Entrada
-					piso zócalo, 395 m2
-					contruidos, 773 m2 terreno
-					exclusivo, 77 m2 terrazas
-					cubiertas, 480 m2 de jardines,
-					terrazas, quincho y piscina,</p>
+				<!-- Expanded image -->
+				<img src="assets/images/casa_quillay.jpg" id="expandedImgSecond" style="width:100%">
+				<div class="hover__info" id="hover__info-2">
+					<h3>Casa Quillay</h3>
+					<div class="separation-line"></div>
+					<p>3 CASAS Q <br>
+					Entrada piso Cubierta</p>
 					<br>
-				<p><b>Espacios:</b>4 estacionamientos, 3
-					dormitorios en suite, 4 baños. Estar
-					familiar, Escritorio, Galería estudio,
-					Dormitorio y baño de servicios, sala
-					de máquinas de 16 m2 y patio de
-					servicio de 17 m2</p>
+					<p><b>Medidas:</b> 7 casas M, Entrada
+						piso zócalo, 395 m2
+						contruidos, 773 m2 terreno
+						exclusivo, 77 m2 terrazas
+						cubiertas, 480 m2 de jardines,
+						terrazas, quincho y piscina,</p>
+						<br>
+					<p><b>Espacios:</b>4 estacionamientos, 3
+						dormitorios en suite, 4 baños. Estar
+						familiar, Escritorio, Galería estudio,
+						Dormitorio y baño de servicios, sala
+						de máquinas de 16 m2 y patio de
+						servicio de 17 m2</p>
+				</div>
 			</div>
-		</div>
-		<!-- The grid: four columns -->
-		<div class="row_gallery_tab">
-			<div class="column_gallery_tab">
-				<img src="assets/images/casa_quillay.jpg" alt="Nature" onclick="expandSecond(this);">
+			<!-- The grid: four columns -->
+			<div class="row_gallery_tab">
+				<div class="column_gallery_tab">
+					<img src="assets/images/casa_quillay.jpg" alt="Nature" onclick="expandSecond(this);">
+				</div>
+				<div class="column_gallery_tab">
+					<img src="assets/images/casa_quillay1.jpg" alt="Snow" onclick="expandSecond(this);">
+				</div>
+				<div class="column_gallery_tab">
+					<img src="assets/images/casa_quillay2.jpg" alt="Mountains" onclick="expandSecond(this);">
+				</div>
+				<div class="column_gallery_tab">
+					<img src="assets/images/casa_quillay3.jpg" alt="Lights" onclick="expandSecond(this);">
+				</div>
 			</div>
-			<div class="column_gallery_tab">
-				<img src="assets/images/casa_quillay1.jpg" alt="Snow" onclick="expandSecond(this);">
-			</div>
-			<div class="column_gallery_tab">
-				<img src="assets/images/casa_quillay2.jpg" alt="Mountains" onclick="expandSecond(this);">
-			</div>
-			<div class="column_gallery_tab">
-				<img src="assets/images/casa_quillay3.jpg" alt="Lights" onclick="expandSecond(this);">
-			</div>
-		</div>
-	</section>
-	<section class="content-08">
-		<section class="section__title--color ladera__section">
-        	<h2>otros proyectos evoluciona</h2>
-			<div class="separation-line"></div>
 		</section>
-		<div class="proyectos__section">
-			<img src="assets/images/lo-vial.jpg">
-			<div class="proyecto__hover" id="proyectos__hover">
-				<h3>Lo Vial</h3>
-				<div class="separation-line-white"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</div>
-		<div class="proyectos__section">
-			<img src="assets/images/vista-lo-ovalle.jpg">
-			<div class="proyecto__hover" id="proyectos__hover-2">
-				<h3>Vista Lo Ovalle</h3>
-				<div class="separation-line-white"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</div>
-	</section>
-	<section class="content-09">
-		<div class="contact__section">
-			<div class="section__title--color">
-				<h2>contáctanos</h2>
+		<!-- <section class="content-08">
+			<section class="section__title--color ladera__section">
+	        	<h2>otros proyectos evoluciona</h2>
 				<div class="separation-line"></div>
+			</section>
+			<div class="proyectos__section">
+				<img src="assets/images/lo-vial.jpg">
+				<div class="proyecto__hover" id="proyectos__hover">
+					<h3>Lo Vial</h3>
+					<div class="separation-line-white"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 			</div>
-			<div class="contact__info">
-				<p>+562 2201 0438</p>
-				<p>contacto@ievoluciona.cl</p>
+			<div class="proyectos__section">
+				<img src="assets/images/vista-lo-ovalle.jpg">
+				<div class="proyecto__hover" id="proyectos__hover-2">
+					<h3>Vista Lo Ovalle</h3>
+					<div class="separation-line-white"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 			</div>
-			<img src="assets/images/evoluciona-icon-color.png">
-		</div>
-	</section>
+		</section> -->
+		<section class="content-08">
+			<div class="contact__section">
+				<div class="section__title--color">
+					<h2>contáctanos</h2>
+					<div class="separation-line"></div>
+				</div>
+				<div class="contact__info">
+					<p>+562 2201 0438</p>
+					<p>contacto@ievoluciona.cl</p>
+				</div>
+				<img src="assets/images/evoluciona-icon-color.png">
+			</div>
+		</section>
+	</div>
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

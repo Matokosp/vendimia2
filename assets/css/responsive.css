@@ -1,0 +1,81 @@
+@media (min-width: 768px) {
+
+.hover__info h3 {
+	font-size: 2.5em;
+}
+
+.hover__info p {
+	font-size: 1.4em;
+}
+
+
+}
+
+
+@media (min-width: 992px) {
+
+.flex-direction-nav .flex-prev {
+	left: 10px;
+}
+
+.flex-direction-nav .flex-next {
+	right: 10px;
+}
+
+.content-04 {
+	position: relative;
+}
+
+.info__casas {
+	position: absolute;
+	bottom: 10vh;
+	left: 0;
+	transform: translateX(10%);
+	padding: 0;
+	width: 80%;
+}
+
+.info__casas-item {
+	width: 16%;
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.info__casas-item h3 {
+  font-size: 2em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.info__casas-item h4 {
+  font-size: 1.1em; 
+  color: #fff;
+}
+
+.info__casas-item--separation {
+	position: absolute;
+	top: 0;
+	right: 0;
+  height: 30px;
+  background-color: #fff;
+  width: 2px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+
+.video__section--mobile {
+	display: none;
+}
+
+#myVideo {
+	display: block;
+}
+
+}
