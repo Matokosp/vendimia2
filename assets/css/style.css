@@ -234,6 +234,10 @@ h2 {
 
 /*ORIGEN PROYECTO SECTION*/
 
+.content-02 {
+  margin-top: 0;
+}
+
 .origen__proyecto {
   padding: 0 10vw;
   display: block;
@@ -301,7 +305,7 @@ h2 {
   z-index: 4;
   width: 100%;
   left: 0;
-  top: 5vh;
+  top: 7vh;
   padding: 0 10vw 0 10vw;
   box-sizing: border-box;
 }

@@ -27,15 +27,17 @@
         if(
           scroll <= $( this ).offset().top && (
             // advance
-            ( direction == 'down' && scroll >= $( this ).offset().top - ( windowHeight * 1 / 4 ) ) ||
+            ( direction == 'down' && scroll >= $( this ).offset().top - ( windowHeight * 1 / 4 ) )
+             // ||
             // stabilize
-            ( direction == 'up' && scroll >= $( this ).offset().top - ( windowHeight / 3 ) )
+            // ( direction == 'up' && scroll >= $( this ).offset().top - ( windowHeight / 3 ) )
           ) ||
           scroll >= $( this ).offset().top && (
             // advance
-            ( direction == 'up' && scroll <= $( this ).offset().top + ( windowHeight * 1 / 4 ) ) ||
+            ( direction == 'up' && scroll <= $( this ).offset().top + ( windowHeight * 1 / 4 ) ) 
+            // ||
             // stabilize
-            ( direction == 'down' && scroll <= $( this ).offset().top + ( windowHeight / 3 ) )
+            // ( direction == 'down' && scroll <= $( this ).offset().top + ( windowHeight / 3 ) )
           )
         ){
           $( 'body:not( .lock-scroll )' ).addClass( 'lock-scroll' );
