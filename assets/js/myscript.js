@@ -20,26 +20,46 @@
 	var menuicon = $('.menuicon');
 	var $window = $(window);
 	var contentUno = $('.content-01').offset();
-	var contentDos = $('.content-02').offset();
-	var contentTres = $('.content-03').offset();
-	var contentCuatro = $('.content-04').offset();
+	// var contentDos = $('.content-02').offset();
+	// var contentTres = $('.content-03').offset();
+	var contentCuatro = $('#contentCuatro').offset();
 	var infoCasas = $('.info__casas').offset();
-	var contentCinco = $('.content-05').offset();
+	var contentCinco = $('#contentCinco').offset();
 	var contentSeis = $('.content-06').offset();
-	var contentSiete = $('.content-07').offset();
-	var contentOcho = $('.content-08').offset();
+	// var contentSiete = $('.content-07').offset();
+	// var contentOcho = $('.content-08').offset();
+
+	const mq = window.matchMedia( "(max-width: 768px)" );
 
 	$window.scroll(function() {
-		if ($window.scrollTop()+100 >= contentCuatro.top ) {
-			menuicon.removeClass().addClass('menuicon--white');
-		} else {
-			menuicon.removeClass().addClass('menuicon');
+		if ($window.scrollTop() >= contentUno.top ) {
+			menuicon.removeClass('menuicon--white');
+			$('.info__casas-item').removeClass('info__casas-item--reveal');
+			// menuicon.css('background-color', '#000');
+		}
+		if ($window.scrollTop()+50 >= contentCuatro.top ) {
+			menuicon.addClass('menuicon--white');
+			$('.info__casas-item').addClass('info__casas-item--reveal');
+			// menuicon.css('background-color', '#fff');
 		}
 
-		if ($window.scrollTop() >= infoCasas.top ) {
-			menuicon.removeClass().addClass('menuicon');
+		// if (mq.matches) {
+		// 	// if ($window.scrollTop() >= infoCasas.top ) {
+		// 	// 	menuicon.css('background-color', '#000');
+		// 	// }
+		// }
+		if ($window.scrollTop()+50 >= contentCinco.top ) {
+			menuicon.removeClass('menuicon--white');
+			// menuicon.css('background-color', '#000');
 		}
+		// if ($window.scrollTop()-500 >= contentSeis.top ) {
+		// 	menuicon.css('background-color', '#fff');
+		// }
 
+
+		// if ($window.scrollTop() >= infoCasas.top ) {
+		// 	menuicon.css('background-color', '#000');
+		// }
 
 	})
 

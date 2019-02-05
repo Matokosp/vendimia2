@@ -54,20 +54,17 @@
   right: 150px;
 }
 
-#menuicon {
-  height: 3px;
-  width: 100%;
-  margin-bottom: 4px;
-  transition: 0.3s;
-  float: right;
-}
-
 .menuicon {
 	background-color: #000;
+	height: 3px;
+	width: 100%;
+	margin-bottom: 4px;
+	transition: 0.3s;
+	float: right;
 }
 
 .menuicon--white {
-  background-color: #fff;
+	background-color: #fff;
 }
 
 .menures {
