@@ -47,11 +47,6 @@
 	transition: 0.5s ease-in-out;
 }
 
-.info__casas-item--reveal {
-	transform: translateY(0);
-	opacity: 1;
-}
-
 .info__casas-item h3 {
   font-size: 2em;
   font-weight: 400;
@@ -123,12 +118,25 @@ body {
 	font-size: 18px;
 }
 
+.hidden {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+
 .video__section--mobile {
 	display: none;
 }
 
 #myVideo {
 	display: block;
+}
+
+/*ORIGEN PROYECTO SECTION*/
+
+.reveal {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 .contact__section {
@@ -148,5 +156,7 @@ body {
   vertical-align: middle;
   margin: 0 5%;
 }
+
+
 
 }
