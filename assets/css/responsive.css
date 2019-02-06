@@ -14,6 +14,8 @@
 
 @media (min-width: 992px) {
 
+
+
 .flex-direction-nav .flex-prev {
 	left: 10px;
 }
@@ -120,6 +122,18 @@
 .hover__info p {
 	margin-top: 10px;
   font-size: 1.1em;
+}
+
+.hidden {
+	transform: translateY(100px);
+	opacity: 0;
+	-webkit-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+}
+
+.reveal {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 }
