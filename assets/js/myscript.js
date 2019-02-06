@@ -29,11 +29,12 @@
 	var contentSiete = $('#contentSiete').offset();
 	var contentOcho = $('#contentOcho').offset();
 
-	const mq = window.matchMedia( "(max-width: 768px)" );
+	const mq = window.matchMedia( "(min-width: 1100px)" );
 	var windowHeight = $( window ).height();
 
-
-	$window.scroll(function() {
+	if (mq.matches) {
+		
+		$window.scroll(function() {
 		if ($window.scrollTop() >= contentUno.top ) {
 			menuicon.removeClass('menuicon--white');
 			$('.info__casas-item').removeClass('reveal');
@@ -47,7 +48,7 @@
 			menu.children('li:nth-child(2)').children('span').removeClass('active');
 			menu.children('li:nth-child(1)').children('span').addClass('active');
 		}
-		if ($window.scrollTop()+100 >= contentTres.top ) {
+		if ($window.scrollTop()>= contentTres.top ) {
 			menu.children('li:nth-child(1)').children('span').removeClass('active');
 			menu.children('li:nth-child(2)').children('span').addClass('active');
 			menu.children('li:nth-child(3)').children('span').removeClass('active');
@@ -60,22 +61,22 @@
 			menu.children('li:nth-child(3)').children('span').addClass('active');
 			menu.children('li:nth-child(4)').children('span').removeClass('active');
 		}
-		if ($window.scrollTop()+40 >= contentCinco.top  ) {
+		if ($window.scrollTop()+100 >= contentCinco.top  ) {
 			$('.ladera__section-item').addClass('reveal');
 			menuicon.removeClass('menuicon--white');
 			menu.children('li:nth-child(3)').children('span').removeClass('active');
 			menu.children('li:nth-child(4)').children('span').addClass('active');
 			menu.children('li:nth-child(5)').children('span').removeClass('active');
 		}
-		if ($window.scrollTop()+50 >= contentSeis.top  ) {
+		if ($window.scrollTop()+150 >= contentSeis.top  ) {
 			menuicon.addClass('menuicon--white');
 			$('.container_gallery_tab').removeClass('reveal');
 			menu.children('li:nth-child(4)').children('span').removeClass('active');
 			menu.children('li:nth-child(5)').children('span').addClass('active');
 			menu.children('li:nth-child(6)').children('span').removeClass('active');
 		}
-		if ($window.scrollTop()+50 >= contentSiete.top  ) {
-			// menuicon.removeClass('menuicon--white');
+		if ($window.scrollTop()+200 >= contentSiete.top  ) {
+			menuicon.removeClass('menuicon--white');
 			$('.container_gallery_tab').addClass('reveal');
 			menu.children('li:nth-child(5)').children('span').removeClass('active');
 			menu.children('li:nth-child(6)').children('span').addClass('active');
@@ -83,6 +84,10 @@
 		}
 
 	})
+
+
+	}
+	
 
 	// Menu Slide
 

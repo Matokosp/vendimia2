@@ -402,6 +402,14 @@ h2 {
 
 /*INTERIOR VIEW SLIDES*/
 
+.content-06 {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.interior_slider {
+  height: 100vh;
+}
+
 .interior_slide {
   height: calc(var(--vh, 1vh) * 100);
   background-size: cover;
