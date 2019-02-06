@@ -54,7 +54,8 @@
 	box-sizing: border-box;
 	transform: translateY(100px);
 	opacity: 0;
-	transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
 }
 
 .info__casas-item h3 {
@@ -132,7 +133,8 @@ body {
 .hidden {
 	transform: translateY(100px);
 	opacity: 0;
-	transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
 }
 
 .video__section--mobile {

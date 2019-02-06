@@ -48,7 +48,7 @@
 			menu.children('li:nth-child(2)').children('span').removeClass('active');
 			menu.children('li:nth-child(1)').children('span').addClass('active');
 		}
-		if ($window.scrollTop()>= contentTres.top ) {
+		if ($window.scrollTop()+100 >= contentTres.top ) {
 			menu.children('li:nth-child(1)').children('span').removeClass('active');
 			menu.children('li:nth-child(2)').children('span').addClass('active');
 			menu.children('li:nth-child(3)').children('span').removeClass('active');
@@ -61,27 +61,32 @@
 			menu.children('li:nth-child(3)').children('span').addClass('active');
 			menu.children('li:nth-child(4)').children('span').removeClass('active');
 		}
-		if ($window.scrollTop()+100 >= contentCinco.top  ) {
+		if ($window.scrollTop() + ( windowHeight * 3 / 8 ) >= contentCinco.top  ) {
 			$('.ladera__section-item').addClass('reveal');
+		}
+		if ($window.scrollTop()+100 >= contentCinco.top  ) {
 			menuicon.removeClass('menuicon--white');
 			menu.children('li:nth-child(3)').children('span').removeClass('active');
 			menu.children('li:nth-child(4)').children('span').addClass('active');
 			menu.children('li:nth-child(5)').children('span').removeClass('active');
 		}
-		if ($window.scrollTop()+150 >= contentSeis.top  ) {
+		if ($window.scrollTop()+100 >= contentSeis.top  ) {
 			menuicon.addClass('menuicon--white');
 			$('.container_gallery_tab').removeClass('reveal');
 			menu.children('li:nth-child(4)').children('span').removeClass('active');
 			menu.children('li:nth-child(5)').children('span').addClass('active');
 			menu.children('li:nth-child(6)').children('span').removeClass('active');
 		}
+		if ($window.scrollTop()+400 >= contentSiete.top  ) {
+			$('.container_gallery_tab').addClass('reveal');
+		}
 		if ($window.scrollTop()+200 >= contentSiete.top  ) {
 			menuicon.removeClass('menuicon--white');
-			$('.container_gallery_tab').addClass('reveal');
 			menu.children('li:nth-child(5)').children('span').removeClass('active');
 			menu.children('li:nth-child(6)').children('span').addClass('active');
 			menu.children('li:nth-child(7)').children('span').removeClass('active');
 		}
+
 
 	})
 

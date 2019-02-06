@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-.sticky + .content-02 {
+.sticky + #contentDos {
   padding-top: 50px;
 }
 
