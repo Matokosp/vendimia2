@@ -55,9 +55,9 @@
 			menuicon.removeClass('menuicon--white');
 			// menuicon.css('background-color', '#000');
 		}
-		// if ($window.scrollTop()+50 >= contentSeis.top + ( windowHeight * 7 / 8 ) ) {
-		// 	menuicon.css('background-color', '#fff');
-		// }
+		if ($window.scrollTop()+50 >= contentSeis.top + ( windowHeight * 4 / 8 ) ) {
+			menuicon.addClass('menuicon--white');
+		}
 
 
 		// if ($window.scrollTop() >= infoCasas.top ) {
