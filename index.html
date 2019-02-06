@@ -274,7 +274,8 @@
 				<div class="container_gallery_tab hidden">
 					<!-- Close the image -->
 					<!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
-
+					<div class="closebtnDerecho"></div>
+					<div class="closebtnIzquierdo"></div>
 					<!-- Expanded image -->
 					<img src="assets/images/casa_maite.jpg" id="expandedImg" style="width:100%">
 					<div class="hover__info" id="hover__info">
@@ -310,7 +311,8 @@
 				<div class="container_gallery_tab hidden">
 					<!-- Close the image -->
 					<!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
-
+					<div class="closebtnDerecho"></div>
+					<div class="closebtnIzquierdo"></div>
 					<!-- Expanded image -->
 					<img src="assets/images/casa_quillay.jpg" id="expandedImgSecond" style="width:100%">
 					<div class="hover__info" id="hover__info-2">
@@ -420,6 +422,7 @@
 		});
 	</script>
 
+	<!-- SCROLL SNAP -->
 	<script>
 		var windowHeight = $(window).innerWidth();
 
@@ -452,34 +455,20 @@
 		}	
 	</script>
 
-	<!-- GALLERY TAB -->
-	<script type="text/javascript">
-		function expandSecond(imgsSecond) {
-		  // Get the expanded image
-		  var expandImgSecond = document.getElementById("expandedImgSecond");
-		  // Get the image text
-		  var imgText = document.getElementById("imgtext");
-		  // Use the same src in the expanded image as the image being clicked on from the grid
-		  expandImgSecond.src = imgsSecond.src;
-		  // Show the container element (hidden with CSS)
-		  expandImgSecond.parentElement.style.display = "block";
-		}	
-	</script>
+
 
 <!-- SCRIPT HOVER INFO SECTIONS -->
 
 	<script type="text/javascript">
 		$('#hover__info').on('click', function(){		
 			$(this).toggleClass('hover__info-show');
+			$(this).siblings('.closebtnDerecho').toggleClass('hover__info-show');
+			$(this).siblings('.closebtnIzquierdo').toggleClass('hover__info-show');
 		})
 		$('#hover__info-2').on('click', function(){		
 			$(this).toggleClass('hover__info-show');
-		})
-		$('#proyectos__hover').on('click', function(e){
-			$(this).toggleClass('proyecto__hover-show');
-		})
-		$('#proyectos__hover-2').on('click', function(e){
-			$(this).toggleClass('proyecto__hover-show');
+			$(this).siblings('.closebtnDerecho').toggleClass('hover__info-show');
+			$(this).siblings('.closebtnIzquierdo').toggleClass('hover__info-show');
 		})
 	</script>
 </body>
