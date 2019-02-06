@@ -142,7 +142,7 @@ html[xmlns] .flexslider .slides {
   color: rgba(250, 250, 250, 0.5);
 }
 .flex-direction-nav a.flex-next:before {
-  z-index: 99;
+  z-index: 50;
   content: '\f002';
 }
 .flex-direction-nav .flex-prev {
