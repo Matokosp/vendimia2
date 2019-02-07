@@ -84,6 +84,7 @@
 	margin: 2px 0;
 	display: inline-block;
 	margin-left: 5px;
+	transition: 0.5s;
 }
 
 .active {
@@ -94,6 +95,10 @@
 	position: absolute;
 	left: -5px;
 	bottom: 5px;
+}
+
+.brochure__logo {
+	margin-top: 20px;
 }
 
 
