@@ -29,7 +29,7 @@
 	var contentSiete = $('#contentSiete').offset();
 	var contentOcho = $('#contentOcho').offset();
 
-	const mq = window.matchMedia( "(min-width: 1100px)" );
+	const mq = window.matchMedia( "(min-width: 1024px)" );
 	var windowHeight = $( window ).height();
 
 	if (mq.matches) {

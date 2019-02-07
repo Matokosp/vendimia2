@@ -50,7 +50,7 @@ a img {
 
 h2 {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.1em;
 }
 
@@ -126,7 +126,7 @@ h2 {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
 }
 
 .separation-line {
@@ -139,7 +139,7 @@ h2 {
 .section__title--color h2 {
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
 }
 
 .title__word {
@@ -266,8 +266,33 @@ h2 {
 }
 
 .equipo {
-
+  padding-top: 15vh;
 }
+
+.equipo__slide {
+  height: 100vh;
+}
+
+.equipo__description {
+  background-color: #A38C5F;
+  background-blend-mode: multiply;
+  color: #fff;
+  padding: 20px 10vw;
+  text-align: left;
+  transform: translateY(-30px);
+}
+
+.equipo__description h3 {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.equipo__description p {
+  font-size: 1em;
+  line-height: 1.1em;
+}
+
+
 
 /*.equipo {
   padding: 50px 10vw 0px 10vw;
@@ -306,7 +331,7 @@ h2 {
   width: 100%;
   left: 0;
   top: 7vh;
-  padding: 0 10vw 0 10vw;
+  padding: 0 5vw;
   box-sizing: border-box;
 }
 
