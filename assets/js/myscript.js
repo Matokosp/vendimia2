@@ -112,7 +112,9 @@
 	window.addEventListener('click', function(e){
 		// var menuHide = $('.menu-hide');
 		if (menuHideShow === true && e.target.className != 'menu-hide show') {
-			desplazar();
+			$('.menu-hide').removeClass('show');
+			$('#hamburger').removeClass('hamburguer-slide');
+			// desplazar();
 			e.stopPropagation();		
 		}
 		console.log(e.target)
