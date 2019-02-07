@@ -469,6 +469,19 @@
 		  expandImg.parentElement.style.display = "block";
 		}	
 	</script>
+	<!-- GALLERY TAB -->
+	<script type="text/javascript">
+		function expandSecond(imgsSecond) {
+		  // Get the expanded image
+		  var expandImgSecond = document.getElementById("expandedImgSecond");
+		  // Get the image text
+		  var imgText = document.getElementById("imgtext");
+		  // Use the same src in the expanded image as the image being clicked on from the grid
+		  expandImgSecond.src = imgsSecond.src;
+		  // Show the container element (hidden with CSS)
+		  expandImgSecond.parentElement.style.display = "block";
+		}	
+	</script>
 
 
 
