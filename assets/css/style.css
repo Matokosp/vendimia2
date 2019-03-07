@@ -442,7 +442,32 @@ h2 {
   background-size: cover;
   background-position: center center;
   overflow: hidden;
+  position: relative;
 }
+
+.interior_slide-text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-align: left;
+  color: #fff;
+}
+
+.interior_slide-text h2 {
+  text-transform: uppercase;
+}
+
+.interior_slide-text h3 {
+  font-family: 'Biloxi Script';
+  font-size: 2em; 
+}
+
+.interior_slide-text .separation-line-white {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 
 .interior-1 {
   background-image: url(../images/interior_1.jpg);
@@ -591,6 +616,18 @@ h2 {
   font-weight: 300;
   color: #fff;
 }
+
+.brochure__link img {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.brochure__link span {
+  color: #A38C5F;
+  font-size: 0.9em;
+}
+
 
 /*.proyectos__section {
   padding: 0 5vw;

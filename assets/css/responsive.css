@@ -31,6 +31,20 @@
 	font-size: 1.4em;
 }
 
+.interior_slide-text {
+  top: 50px;
+  left: 50px;
+}
+
+.interior_slide-text h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.interior_slide-text h3 {
+  font-size: 3em; 
+}
+
 
 }
 
@@ -117,6 +131,30 @@
 	width: 50%;
   	padding: 0 5vw;
   	box-sizing: border-box;
+}
+
+/*INTERIOR*/
+
+.interior_slide-text {
+  top: 50px;
+  left: 10vw;
+  text-align: center;
+}
+
+.interior_slide-text h2 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+.interior_slide-text h3 {
+  font-size: 3.2em;
+  margin: -15px;
+}
+
+.interior_slide-text .separation-line-white {
+  position: relative;
+  width: 40%;
 }
 
 /*TIPOLOGIA CASA SECTION*/
