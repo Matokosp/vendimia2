@@ -29,86 +29,83 @@
 	var contentSiete = $('#contentSiete').offset();
 	var contentOcho = $('#contentOcho').offset();
 
-	const mq = window.matchMedia( "(min-width: 1024px)" );
+	const mq = window.matchMedia( "(min-width: 1200px)" );
 	var windowHeight = $( window ).height();
+
 
 	if (mq.matches) {
 		
 		$window.scroll(function() {
-		if ($window.scrollTop() >= contentUno.top ) {
-			menuicon.removeClass('menuicon--white');
-			$('.info__casas-item').removeClass('reveal');
-			$('.origen__proyecto--img').removeClass('reveal');
-			$('.origen__proyecto').children('p').removeClass('reveal');
-			menu.children('li:nth-child(1)').children('span').removeClass('active');
-			menu.children('li:nth-child(1)').children('a').css({'color': '#fff', 'font-weight': '400'});
-		}
-		if ($window.scrollTop() >= contentDos.top - ( windowHeight * 2 / 8 ) ) {
-			$('.origen__proyecto--img').addClass('reveal');
-			$('.origen__proyecto').children('p').addClass('reveal');
-			menu.children('li:nth-child(2)').children('span').removeClass('active');
-			menu.children('li:nth-child(1)').children('span').addClass('active');
-			menu.children('li:nth-child(1)').children('a').css({'color': '#000', 'font-weight': '700'});
-			menu.children('li:nth-child(2)').children('a').css({'color': '#fff', 'font-weight': '400'});
-		}
-		if ($window.scrollTop()+100 >= contentTres.top ) {
-			menu.children('li:nth-child(1)').children('span').removeClass('active');
-			menu.children('li:nth-child(2)').children('span').addClass('active');
-			menu.children('li:nth-child(3)').children('span').removeClass('active');
-			menu.children('li:nth-child(1)').children('a').css({'color': '#fff', 'font-weight': '400'});
-			menu.children('li:nth-child(2)').children('a').css({'color': '#000', 'font-weight': '700'});
-			menu.children('li:nth-child(3)').children('a').css({'color': '#fff', 'font-weight': '400'});
-		}
-		if ($window.scrollTop()+100 >= contentCuatro.top ) {
-			menuicon.addClass('menuicon--white');
-			$('.info__casas-item').addClass('reveal');
-			$('.ladera__section-item').removeClass('reveal');
-			menu.children('li:nth-child(2)').children('span').removeClass('active');
-			menu.children('li:nth-child(3)').children('span').addClass('active');
-			menu.children('li:nth-child(4)').children('span').removeClass('active');
-			menu.children('li:nth-child(2)').children('a').css({'color': '#fff', 'font-weight': '400'});
-			menu.children('li:nth-child(3)').children('a').css({'color': '#000', 'font-weight': '700'});
-			menu.children('li:nth-child(4)').children('a').css({'color': '#fff', 'font-weight': '400'});
-		}
-		if ($window.scrollTop() + ( windowHeight * 3 / 8 ) >= contentCinco.top  ) {
-			$('.ladera__section-item').addClass('reveal');
-		}
-		if ($window.scrollTop()+100 >= contentCinco.top  ) {
-			menuicon.removeClass('menuicon--white');
-			menu.children('li:nth-child(3)').children('span').removeClass('active');
-			menu.children('li:nth-child(4)').children('span').addClass('active');
-			menu.children('li:nth-child(5)').children('span').removeClass('active');
-			menu.children('li:nth-child(3)').children('a').css({'color': '#fff', 'font-weight': '400'});
-			menu.children('li:nth-child(4)').children('a').css({'color': '#000', 'font-weight': '700'});
-			menu.children('li:nth-child(5)').children('a').css({'color': '#fff', 'font-weight': '400'});
-		}
-		if ($window.scrollTop()+100 >= contentSeis.top  ) {
-			menuicon.addClass('menuicon--white');
-			$('.container_gallery_tab').removeClass('reveal');
-			menu.children('li:nth-child(4)').children('span').removeClass('active');
-			menu.children('li:nth-child(5)').children('span').addClass('active');
-			menu.children('li:nth-child(6)').children('span').removeClass('active');
-			menu.children('li:nth-child(4)').children('a').css({'color': '#fff', 'font-weight': '400'});
-			menu.children('li:nth-child(5)').children('a').css({'color': '#000', 'font-weight': '700'});
-			menu.children('li:nth-child(6)').children('a').css({'color': '#fff', 'font-weight': '400'});
-		}
-		if ($window.scrollTop()+400 >= contentSiete.top  ) {
-			$('.container_gallery_tab').addClass('reveal');
-		}
-		if ($window.scrollTop()+200 >= contentSiete.top  ) {
-			menuicon.removeClass('menuicon--white');
-			menu.children('li:nth-child(5)').children('span').removeClass('active');
-			menu.children('li:nth-child(6)').children('span').addClass('active');
-			menu.children('li:nth-child(7)').children('span').removeClass('active');
-			menu.children('li:nth-child(5)').children('a').css({'color': '#fff', 'font-weight': '400'});
-			menu.children('li:nth-child(6)').children('a').css({'color': '#000', 'font-weight': '700'});
-			menu.children('li:nth-child(7)').children('a').css({'color': '#fff', 'font-weight': '400'});
-		}
-
-
-	})
-
-
+			if ($window.scrollTop() >= contentUno.top ) {
+				menuicon.removeClass('menuicon--white');
+				$('.info__casas-item').removeClass('reveal');
+				$('.origen__proyecto--img').removeClass('reveal');
+				$('.origen__proyecto').children('p').removeClass('reveal');
+				menu.children('li:nth-child(1)').children('span').removeClass('active');
+				menu.children('li:nth-child(1)').children('a').css({'color': '#fff', 'font-weight': '400'});
+			}
+			if ($window.scrollTop() >= contentDos.top - ( windowHeight * 2 / 8 ) ) {
+				$('.origen__proyecto--img').addClass('reveal');
+				$('.origen__proyecto').children('p').addClass('reveal');
+				menu.children('li:nth-child(2)').children('span').removeClass('active');
+				menu.children('li:nth-child(1)').children('span').addClass('active');
+				menu.children('li:nth-child(1)').children('a').css({'color': '#000', 'font-weight': '700'});
+				menu.children('li:nth-child(2)').children('a').css({'color': '#fff', 'font-weight': '400'});
+			}
+			if ($window.scrollTop()+100 >= contentTres.top ) {
+				menu.children('li:nth-child(1)').children('span').removeClass('active');
+				menu.children('li:nth-child(2)').children('span').addClass('active');
+				menu.children('li:nth-child(3)').children('span').removeClass('active');
+				menu.children('li:nth-child(1)').children('a').css({'color': '#fff', 'font-weight': '400'});
+				menu.children('li:nth-child(2)').children('a').css({'color': '#000', 'font-weight': '700'});
+				menu.children('li:nth-child(3)').children('a').css({'color': '#fff', 'font-weight': '400'});
+			}
+			if ($window.scrollTop()+100 >= contentCuatro.top ) {
+				menuicon.addClass('menuicon--white');
+				$('.info__casas-item').addClass('reveal');
+				$('.ladera__section-item').removeClass('reveal');
+				menu.children('li:nth-child(2)').children('span').removeClass('active');
+				menu.children('li:nth-child(3)').children('span').addClass('active');
+				menu.children('li:nth-child(4)').children('span').removeClass('active');
+				menu.children('li:nth-child(2)').children('a').css({'color': '#fff', 'font-weight': '400'});
+				menu.children('li:nth-child(3)').children('a').css({'color': '#000', 'font-weight': '700'});
+				menu.children('li:nth-child(4)').children('a').css({'color': '#fff', 'font-weight': '400'});
+			}
+			if ($window.scrollTop() + ( windowHeight * 3 / 8 ) >= contentCinco.top  ) {
+				$('.ladera__section-item').addClass('reveal');
+			}
+			if ($window.scrollTop()+100 >= contentCinco.top  ) {
+				menuicon.removeClass('menuicon--white');
+				menu.children('li:nth-child(3)').children('span').removeClass('active');
+				menu.children('li:nth-child(4)').children('span').addClass('active');
+				menu.children('li:nth-child(5)').children('span').removeClass('active');
+				menu.children('li:nth-child(3)').children('a').css({'color': '#fff', 'font-weight': '400'});
+				menu.children('li:nth-child(4)').children('a').css({'color': '#000', 'font-weight': '700'});
+				menu.children('li:nth-child(5)').children('a').css({'color': '#fff', 'font-weight': '400'});
+			}
+			if ($window.scrollTop()+100 >= contentSeis.top  ) {
+				menuicon.addClass('menuicon--white');
+				$('.container_gallery_tab').removeClass('reveal');
+				menu.children('li:nth-child(4)').children('span').removeClass('active');
+				menu.children('li:nth-child(5)').children('span').addClass('active');
+				menu.children('li:nth-child(6)').children('span').removeClass('active');
+				menu.children('li:nth-child(4)').children('a').css({'color': '#fff', 'font-weight': '400'});
+				menu.children('li:nth-child(5)').children('a').css({'color': '#000', 'font-weight': '700'});
+				menu.children('li:nth-child(6)').children('a').css({'color': '#fff', 'font-weight': '400'});
+			}
+			if ($window.scrollTop()+400 >= contentSiete.top  ) {
+				$('.container_gallery_tab').addClass('reveal');
+			}
+			if ($window.scrollTop()+200 >= contentSiete.top  ) {
+				menuicon.removeClass('menuicon--white');
+				menu.children('li:nth-child(5)').children('span').removeClass('active');
+				menu.children('li:nth-child(6)').children('span').addClass('active');
+				menu.children('li:nth-child(7)').children('span').removeClass('active');
+				menu.children('li:nth-child(5)').children('a').css({'color': '#fff', 'font-weight': '400'});
+				menu.children('li:nth-child(6)').children('a').css({'color': '#000', 'font-weight': '700'});
+				menu.children('li:nth-child(7)').children('a').css({'color': '#fff', 'font-weight': '400'});
+			}
+		})
 	}
 	
 

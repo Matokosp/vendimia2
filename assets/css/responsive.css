@@ -1,4 +1,27 @@
+@media (max-width: 320px) {
+
+.hover__info h3 {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.hover__info p {
+  font-size: 0.65em;
+}
+
+
+}
+
+
 @media (min-width: 768px) {
+
+.hover__info {
+  padding: 20px 10vw;
+}
+
+.hover__info .separation-line {
+  margin: 15px auto;
+}
 
 .hover__info h3 {
 	font-size: 2.5em;
@@ -22,6 +45,10 @@
 
 .flex-direction-nav .flex-next {
 	right: 10px;
+}
+
+.equipo .flex-direction-nav a:before {
+  color: rgba(0,0,0,0.5);
 }
 
 .content-04 {
@@ -107,8 +134,7 @@
 }
 
 .hover__info {
-  padding: 5%;
-  width: 100%;
+  padding: 10px 1vw;
 }
 
 .hover__info-show {
@@ -116,25 +142,14 @@
 }
 
 .hover__info h3 {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .hover__info p {
 	margin-top: 10px;
-  font-size: 1.1em;
+  font-size: 0.8em;
 }
 
-.hidden {
-	transform: translateY(100px);
-	opacity: 0;
-	-webkit-transition: 0.5s ease-out;
-	transition: 0.5s ease-out;
-}
-
-.reveal {
-	transform: translateY(0);
-	opacity: 1;
-}
 
 }
 
@@ -145,6 +160,10 @@ body {
 }
 
 
+.reveal {
+	transform: translateY(0);
+	opacity: 1;
+}
 
 .hidden {
 	transform: translateY(100px);
@@ -155,6 +174,24 @@ body {
 
 .video__section--mobile {
 	display: none;
+}
+
+.video__section--layer {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  padding: 0;
+  top: 0;
+  right: 0;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.vendimia-logo-video {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+  	width: 250px;
 }
 
 #myVideo {
@@ -227,7 +264,16 @@ body {
   width: 10%;
 }
 
+
 /*INTERIOR*/
 
+
+.hover__info {
+  padding: 10px 5vw;
+}
+
+.hover__info h3 {
+  font-size: 1.5em;
+}
 
 }

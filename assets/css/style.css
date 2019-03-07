@@ -131,12 +131,13 @@ h2 {
 
 .separation-line {
   height: 2px;
-  background-color: #7b6f65;
+  background-color: #565656;
   width: 20%;
   margin: 10px auto 0 auto;
 }
 
 .section__title--color h2 {
+  color: #565656;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -254,6 +255,7 @@ h2 {
   font-size: 1.1em;
   text-align: left;
   font-weight: 300;
+  color: #565656;
 }
 
 
@@ -409,7 +411,7 @@ h2 {
 .ladera__section-item h3 {
   font-size: 1.4em;
   font-weight: 600;
-  color: #7b6f65;
+  color: #565656;
   text-align: left;
   margin-bottom: 15px;
 }
@@ -417,7 +419,7 @@ h2 {
 .ladera__section-item p {
   width: 100%;
   display: inline-block;
-  color: #7b6f65;
+  color: #565656;
   font-size: 1.1em;
   line-height: 1.3em;
   text-align: left;
@@ -554,14 +556,14 @@ h2 {
 .hover__info {
   position: absolute;
   box-sizing: border-box;
-  padding: 3vh 15vw;
+  padding: 5px 2vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
-  background-color: rgba(129, 126, 113, 0.8);
+  background-color: rgba(163, 140, 95, 0.8);
   height: 100%;
   opacity: 0;
   transition: 0.5s;
@@ -579,12 +581,13 @@ h2 {
 .hover__info h3 {
   color: #fff;
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 .hover__info p {
   margin-top: 5px;
   line-height: 1.2em;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 300;
   color: #fff;
 }
