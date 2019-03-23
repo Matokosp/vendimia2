@@ -45,6 +45,10 @@
   font-size: 3em; 
 }
 
+.equipo {
+  padding-top: 5vh;
+}
+
 
 /*FOOTER*/
 
@@ -257,23 +261,36 @@ body {
 /*EQUIPO SECTION*/
 
 .equipo {
-  padding-top: 18vh;
+  height: 100vh;
+  padding-top: 0;
+}
+
+.flexslider.equipo {
+  margin-bottom: 0;
+}
+
+.equipo .section__title--color {
+  padding-top: 5vh;
 }
 
 .equipo__slide-container {
-	padding: 0 10vw;
+	padding: 0 8vw;
+}
+
+.equipo .flex-control-nav {
+  bottom: 50px;
 }
 
 .flexslider .slides .equipo__img {
 	display: inline-block;
-	width: 50%;
+	width: 45%;
 }
 
 .equipo__description {
-	width: 30%;
+	width: 45%;
 	padding: 40px;
   display: inline-block;
-  transform: translateY(-60px) translateX(-100px);
+  transform: translateY(-60px) translateX(-30px);
 }
 
 .equipo__description h3 {
@@ -352,5 +369,13 @@ footer {
   padding: 0 1%;
 }
 
+
+}
+
+@media (min-width: 1920px) and (orientation: landscape) {
+
+.equipo__slide-container {
+  padding: 0 15vw;
+}
 
 }

@@ -263,21 +263,21 @@ h2 {
 /*EQUIPO SECTION*/
 
 .content-03 {
-  height: calc(var(--vh, 1vh) * 100);
+ /* height: calc(var(--vh, 1vh) * 100);*/
   margin: 10vh 0 0 0;
 }
 
 .equipo {
-  padding-top: 15vh;
+  padding-top: 10vh;
 }
 
-.equipo__slide {
-  height: 100vh;
+.equipo .section__title--color {
+  margin-bottom: 30px;
 }
 
 .equipo__description {
   background-color: #A38C5F;
-  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
   color: #fff;
   padding: 20px 10vw;
   text-align: left;
@@ -286,14 +286,25 @@ h2 {
 
 .equipo__description h3 {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .equipo__description p {
   font-size: 1em;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
 
+.equipo .flex-control-nav {
+  bottom: -20px;
+}
+
+.equipo .flex-control-nav li a {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.equipo .flex-control-nav li a.flex-active {
+  background-color: #000;
+}
 
 
 /*.equipo {
