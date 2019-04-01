@@ -628,6 +628,10 @@ h2 {
   color: #fff;
 }
 
+.brochure__link {
+  text-decoration: none;
+}
+
 .brochure__link img {
   width: 40px;
   vertical-align: middle;
